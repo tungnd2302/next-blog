@@ -1,0 +1,38 @@
+:root {
+    --background-color: white;
+    --link-color: darkred;
+    --text-color: black;
+}   
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:not(:first-child) {
+    margin-left: 0.75rem;
+}
